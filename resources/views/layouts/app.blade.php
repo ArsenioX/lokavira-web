@@ -92,78 +92,76 @@
     <!-- Navbar End -->
     @yield('content')
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+<div class="container-fluid text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s"
+    style="background: linear-gradient(90deg, #0b1121 0%, #0f4c5c 100%);">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-info mb-4">LOKAVIRA</h4>
+                <h6 class="text-white">PT Viovera Marli Sejahtera</h6>
+                <p class="mb-4 text-white-50">Partner digital kreatif dan analitik terpercaya Anda.</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-tiktok"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                            class="fab fa-youtube"></i></a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Financial Planning</a>
-                    <a class="btn btn-link" href="">Cash Investment</a>
-                    <a class="btn btn-link" href="">Financial Consultancy</a>
-                    <a class="btn btn-link" href="">Business Loans</a>
-                    <a class="btn btn-link" href="">Business Analysis</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Layanan</h4>
+                <a class="btn btn-link" href="">Social Media Management</a>
+                <a class="btn btn-link" href="">Web Development</a>
+                <a class="btn btn-link" href="">TikTok & YouTube Ads</a>
+                <a class="btn btn-link" href="">Instagram Ads</a>
+                <a class="btn btn-link" href="">UI/UX & Editing Grafis</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Hubungi Kami</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Gading Griya Lestari H1 No.39,
+                    Cilincing,
+                    Jakarta Utara</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>support@lokavira.com</p>
+                <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>+62 812-3456-7890</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Newsletter</h4>
+                <p>Dapatkan tips marketing dan promo terbaru langsung di inbox Anda.</p>
+                <div class="position-relative w-100">
+                    <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
+                        placeholder="Email Anda">
+                    <button type="button"
+                        class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
-                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version from https://htmlcodex.com . ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+</div>
+<div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s"
+    style="background: #0b1121; border-top: 1px solid rgba(256, 256, 256, .1);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; 2026 <a class="border-bottom" href="#">PT. Viovera Marli Sejahtera</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                    <a href="">Home</a>
+                    <a href="">Cookies</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+</div>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
