@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Finanza - Financial Services Website Template</title>
+    <title>Lokavira - Digital Marketing Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -35,6 +35,17 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/6281234567890?text=Halo%20Lokavira,%20saya%20ingin%20bertanya%20tentang%20layanan" 
+   class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <div class="whatsapp-container">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+        <span>Kontak Kami</span>
+    </div>
+</a>
+
+
+<!-- Back to top sudah ada, biarkan tetap di atas floating button -->
 <body>
     <!-- Spinner Start -->
     <div id="spinner"

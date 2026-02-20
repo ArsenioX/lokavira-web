@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row g-4 align-items-end mb-4">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/about.jpg" alt="Tentang Lokavira">
+                        <img class="img-fluid rounded" src="{{ asset('img/about1.jpg') }}" alt="Tentang Lokavira">
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang Kami</p>

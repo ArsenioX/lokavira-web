@@ -42,9 +42,10 @@
             $('.back-to-top').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+    $('.back-to-top').click(function (e) {
+    e.preventDefault();  // tambahkan ini biar lebih aman
+    $('html, body').animate({scrollTop: 0}, 400, 'swing');  // 400ms = cepat & smooth
+    return false;
     });
 
 

@@ -33,11 +33,11 @@
                                     </a>
                                 </div>
 
-                                <div class="col-lg-6 col-md-12 text-center text-lg-end">
-                                    <img src="{{ asset('img/mockup1.jpg') }}" alt="Ilustrasi Digital Marketing"
-                                        class="img-fluid animated slideInRight"
-                                        style="width: 100%; max-width: 500px; height: auto; animation-delay: 0.6s;">
-                                </div>
+                               <div class="col-lg-6 col-md-12 text-center text-lg-end">
+                                    <img src="{{ asset('img/mockup1.jpg') }}" alt="Ilustrasi Digital Marketing"
+                                        class="img-fluid animated slideInRight"
+                                        style="width: 100%; max-width: 750px; height: auto; animation-delay: 0.6s;"> 
+                                </div>
 
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                 <div class="container">
                     <div class="row g-4 align-items-end mb-4">
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="img/about.jpg" alt="Tentang Lokavira">
+                            <img class="img-fluid rounded" src="img/about1.jpg" alt="Tentang Lokavira">
                         </div>
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang Kami</p>
@@ -257,7 +257,8 @@
                                         <p><i class="fa fa-check text-primary me-3"></i>Konten Kreatif & Relevan</p>
                                         <p><i class="fa fa-check text-primary me-3"></i>Admin Posting & Scheduling</p>
                                         <p><i class="fa fa-check text-primary me-3"></i>Laporan Analisa Bulanan</p>
-                                        <a href="#" class="btn btn-primary py-3 px-5 mt-3">Lihat Pilihan Paket</a>
+                                        <a href="{{ url('/paket') }}" class="btn btn-primary py-3 px-5 mt-3">Lihat Pilihan Paket</a>
+                                        
                                     </div>
                                 </div>
                             </div>
