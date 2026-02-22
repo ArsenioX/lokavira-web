@@ -281,7 +281,7 @@
                                         <p><i class="fa fa-check text-primary me-3"></i>Desain Modern & Responsif</p>
                                         <p><i class="fa fa-check text-primary me-3"></i>Optimasi SEO Dasar</p>
                                         <p><i class="fa fa-check text-primary me-3"></i>Gratis Domain & Hosting*</p>
-                                        <a href="#" class="btn btn-primary py-3 px-5 mt-3">Cek Fitur Website</a>
+                                        <a href="/website" class="btn btn-primary py-3 px-5 mt-3">Cek Fitur Website</a>
                                     </div>
                                 </div>
                             </div>

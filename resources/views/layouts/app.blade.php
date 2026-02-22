@@ -72,13 +72,16 @@
                     <a href="{{ url('/contact') }}" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3"
+                        href="https://www.tiktok.com/@lokavira.id?_r=1&_t=ZS-948d33BJoDk" target="_blank" rel="noopener noreferrer">
                         <small class="fab fa-tiktok text-primary"></small>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://wa.me/628138808690" target="_blank"
+                        rel="noopener noreferrer">
                         <small class="fab fa-whatsapp text-primary"></small>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3"
+                        href="https://www.instagram.com/lokavira.id?igsh=Ym9qODc1NnF5Z3I4" target="_blank" rel="noopener noreferrer">
                         <small class="fab fa-instagram text-primary"></small>
                     </a>
                 </div>
@@ -98,14 +101,23 @@
                     <h6 class="text-white">PT Viovera Marli Sejahtera</h6>
                     <p class="mb-4 text-white-50">Partner digital kreatif dan analitik terpercaya Anda.</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-whatsapp"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-tiktok"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://wa.me/628138808690?text=Halo%20Loka,%20saya%20ingin%20tanya-tanya%20seputar%20layanan%20digital%20marketingnya"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://www.instagram.com/lokavira.id?igsh=Ym9qODc1NnF5Z3I4" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://www.tiktok.com/@lokavira.id?_r=1&_t=ZS-948d33BJoDk" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://youtube.com/@lokavira?si=6f_XcKuaqFZ5hRP1"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                     </div>
                 </div>
 
@@ -123,7 +135,7 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Gading Griya Lestari H1 No.39,
                         Cilincing, Jakarta Utara</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>support@lokavira.com</p>
-                    <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>+62 812-3456-7890</p>
+                    <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>+62 813-880-8690</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
