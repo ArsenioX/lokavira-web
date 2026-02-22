@@ -74,7 +74,7 @@
                             <div class="col-lg-6 col-md-12 text-center text-lg-end">
                                 <img src="{{ asset('img/mockup2.png') }}" alt="Creative Brand Solutions"
                                     class="img-fluid animated slideInRight"
-                                    style="width: 130%; max-width: unset; margin-right: -15%; height: auto; animation-delay: 0.6s;">
+                                    style="width: 100%; max-width: unset; margin-right: -15%; height: auto; animation-delay: 0.6s;">
                             </div>
 
                         </div>
@@ -357,10 +357,10 @@
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Hubungi Kami</p>
                         <h1 class="display-5 mb-4">Siap Meningkatkan Bisnis Anda ke Level Berikutnya?</h1>
-                        <h4 class="mb-4 fw-normal text-secondary">
+                        <p class="mb-4">
                             Jangan ragu untuk berdiskusi dengan kami. Tim Lokavira siap memberikan solusi digital terbaik yang
                             sesuai dengan target dan anggaran Anda.
-                        </h4>
+                        </p>
 
                         <form>
                             <div class="row g-3">
@@ -399,7 +399,7 @@
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                         <div class="position-relative rounded overflow-hidden h-100">
                             <iframe class="position-relative w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666465355602!2d106.9147444!3d-6.175392399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b31a89c4d2d%3A0x6a16223e75e538c2!2sGriya%20Lestari%2C%20Pegangsaan%20Dua%2C%20Kec.%20Klp.%20Gading%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709228812345!5m2!1sid!2sid"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2580.9131305236283!2d106.91572933037732!3d-6.141018910708709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b64a0e8401f%3A0xd9d96bb7e076bde!2sPT.%20Viovera%20Marli%20Sejahtera!5e0!3m2!1sid!2sid!4v1771730595323!5m2!1sid!2sid"
                                 frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
                                 tabindex="0"></iframe>
                         </div>
