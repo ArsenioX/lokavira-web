@@ -17,7 +17,7 @@
 
 
         <!-- Service Start -->
-        <div class="container-xxl service py-5">
+        <div class="container-xxl service pt-5 pb-0">
             <div class="container">
 
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">

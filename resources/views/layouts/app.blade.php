@@ -29,7 +29,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <a href="https://wa.me/6281234567890?text=Halo%20Lokavira,%20saya%20ingin%20bertanya%20tentang%20layanan"
         class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <div class="whatsapp-container">
@@ -85,9 +85,11 @@
             </div>
         </nav>
     </div>
-    @yield('content')
+    <main class="flex-fill">
+        @yield('content')
+    </main>
 
-    <div class="container-fluid text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s"
+    <div class="container-fluid text-light footer py-5 wow fadeIn" data-wow-delay="0.1s"
         style="background: linear-gradient(90deg, #0b1121 0%, #0f4c5c 100%);">
         <div class="container py-5">
             <div class="row g-5">
@@ -166,6 +168,39 @@
     <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
     <script src="{{ asset('js/main.js') }}"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const navbar = document.querySelector(".navbar");
+        const collapse = document.querySelector(".navbar-collapse");
+
+        function checkScrollState(){
+            if(window.scrollY <= 50 && !collapse.classList.contains("show")){
+                navbar.classList.remove("nav-open");
+            }
+        }
+
+        // LANGSUNG putih saat mulai buka (SEBELUM dropdown muncul)
+        collapse.addEventListener("show.bs.collapse", function () {
+            navbar.classList.add("nav-open");
+        });
+
+        // setelah ditutup → cek perlu transparan lagi atau tidak
+        collapse.addEventListener("hidden.bs.collapse", function () {
+            checkScrollState();
+        });
+
+        // scroll behaviour normal
+        window.addEventListener("scroll", function () {
+            if(window.scrollY > 50){
+                navbar.classList.add("nav-open");
+            } else {
+                checkScrollState();
+            }
+        });
+
+    });
+    </script>
 </body>
 
 </html>
