@@ -359,30 +359,39 @@ h6,
     color: var(--primary);
 }
 
-/* Back to Top Button - pastikan z-index lebih rendah */
+/* =======================================
+   BACK TO TOP BUTTON
+======================================= */
 .back-to-top {
     position: fixed;
-    bottom: 90px;          /* naikkan sedikit biar ada ruang */
+    /* display: none; -> biarkan bawaan template yang ngatur hide/show saat di-scroll */
     right: 30px;
-    z-index: 99;           /* rendah dari WA */
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    bottom: 110px; /* KUNCI: Dinaikkan lebih tinggi lagi biar aman dari tombol WA */
+    z-index: 99;
+    width: 45px !important;  /* Ukuran dikunci biar bulat rapi */
+    height: 45px !important; 
+    border-radius: 50% !important; /* Paksa jadi bulat sempurna */
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Kasih efek bayangan biar elegan */
     transition: all 0.3s ease;
-    /* ... sisanya biarkan seperti template asli ... */
 }
 
-/* Floating WhatsApp - z-index lebih tinggi + posisi lebih bawah/kanan agar di atas */
+.back-to-top:hover {
+    transform: translateY(-5px); /* Efek terangkat saat disentuh kursor */
+}
+
+/* =======================================
+   FLOATING WHATSAPP (HOVER EXPAND)
+======================================= */
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;         /* <--- lebih tinggi dari back-to-top (bottom lebih besar = posisi lebih atas di layar) */
-    right: 30px;           /* sama kanan, atau ubah ke 20px kalau mau lebih ke kanan */
-    z-index: 999;          /* <--- INI KUNCI: lebih tinggi dari back-to-top */
-    width: 180px;          /* lebar lebih besar biar teks "Kontak Kami" muat */
-    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    width: 55px;            /* Ukuran awal bulat */
+    height: 55px;
     background-color: #25D366;
     color: white;
     border-radius: 50px;
@@ -390,55 +399,85 @@ h6,
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+    justify-content: flex-start; 
+    overflow: hidden;       
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+/* Hover Effect PC */
 .whatsapp-float:hover {
+    width: 175px;           /* Kotak melebar */
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    color: white;
 }
 
 .whatsapp-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 0 15px;
-    width: 100%;
+    width: 175px;
+    padding-left: 14px;     /* Menjaga ikon pas di tengah saat masih bulat */
 }
 
 .whatsapp-icon {
-    font-size: 28px;
+    font-size: 28px;        
+    line-height: 1;
+    margin-right: 10px;     /* Jarak ikon dengan teks */
 }
 
 .whatsapp-float span {
     font-size: 15px;
     font-weight: 600;
     white-space: nowrap;
+    opacity: 0;             
+    transform: translateX(15px); 
+    transition: all 0.3s ease;
 }
 
+.whatsapp-float:hover span {
+    opacity: 1;             
+    transform: translateX(0); 
+    transition-delay: 0.1s; 
+}
+
+/* =======================================
+   MOBILE RESPONSIVE FIX (HP)
+======================================= */
 @media (max-width: 768px) {
+    /* Perbaikan Posisi Back to Top di HP */
+    .back-to-top {
+        bottom: 95px; 
+        right: 25px;
+    }
 
+    /* Perbaikan WhatsApp Bulat Sempurna di HP */
     .whatsapp-float {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        bottom: 20px;   /* biar gak tabrakan scroll-top */
-        right: 30px;
+        width: 55px;
+        height: 55px;
+        bottom: 25px;
+        right: 25px;
+        justify-content: center; /* KUNCI: Paksa ke tengah */
+        padding: 0;
+    }
+    
+    .whatsapp-float:hover {
+        width: 55px;  /* Matikan efek melar saat disentuh jari di HP */
+        transform: none;
     }
 
-    .whatsapp-container{
-        padding:0;
-        justify-content:center;   /* biar icon bener2 tengah */
+    .whatsapp-container {
+        width: auto;
+        padding: 0;
+        justify-content: center;
     }
 
-    .whatsapp-container span{
-        display:none;
+    .whatsapp-icon {
+        margin-right: 0; /* KUNCI: Hilangkan margin agar tidak miring ke kiri */
+        font-size: 32px; /* Ikon dibesarkan sedikit di HP */
     }
 
-    .whatsapp-icon{
-        font-size:34px;   /* icon lebih besar */
-        line-height:1;
+    .whatsapp-float span {
+        display: none; /* Buang teks sepenuhnya di HP */
     }
 }
 

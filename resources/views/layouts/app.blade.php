@@ -30,7 +30,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <a href="https://wa.me/6281234567890?text=Halo%20Lokavira,%20saya%20ingin%20bertanya%20tentang%20layanan"
+    <a href="https://wa.me/628138808690?text=Halo%20Lokavira,%20saya%20ingin%20bertanya%20tentang%20layanan"
         class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <div class="whatsapp-container">
             <i class="fab fa-whatsapp whatsapp-icon"></i>
