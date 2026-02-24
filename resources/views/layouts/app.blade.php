@@ -50,7 +50,7 @@
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small><i class="fa fa-envelope text-primary me-2"></i>Halo.Lokavira@gmail.com</small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+813 8808 690</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>0813 8808 690</small>
             </div>
         </div>
 
@@ -152,20 +152,27 @@
         </div>
     </div>
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s"
-        style="background: #0b1121; border-top: 1px solid rgba(256, 256, 256, .1);">
+        style="background: #0b1121; border-top: 1px solid rgba(255, 255, 255, .1);">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
+                
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; 2026 <a class="border-bottom" href="#">PT. Viovera Marli Sejahtera</a>, All Right Reserved.
+                    &copy; 2026 <a class="border-bottom text-white" href="{{ url('/') }}">PT. Viovera Marli Sejahtera (Lokavira)</a>, All Right Reserved.
                 </div>
+                
                 <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="">Home</a>
+                    <div class="footer-menu mb-2">
+                        <a href="{{ url('/') }}">Home</a>
                         <a href="">Cookies</a>
                         <a href="">Help</a>
-                        <a href="">FQAs</a>
+                        <a href="">FAQs</a>
+                    </div>
+                    
+                    <div class="small text-white-50">
+                        Designed By <a class="border-bottom text-white-50" href="https://htmlcodex.com" target="_blank">HTML Codex</a>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>

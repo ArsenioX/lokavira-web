@@ -1,10 +1,32 @@
 /********** Template CSS **********/
 :root {
-    --primary: #355EFC;
-    --secondary: #E93C05;
-    --tertiary: #555555;
-    --light: #DFE4FD;
-    --dark: #011A41;
+    --primary: #0C8C8C;   /* Biru Hijau (Teal) khas logo LV */
+    --secondary: #EAB308; /* Kuning Emas (Biar senada dengan logo partner PT 1) */
+    --tertiary: #6B7280;  /* Abu-abu teks yang lebih modern/soft */
+    --light: #E8F6F5;     /* Biru Hijau sangat muda (menggantikan biru langit bawaan) */
+    --dark: #0B1121;      /* Navy/Biru Dongker gelap yang sudah kita pakai di paket */
+}
+
+/* Timpa warna dasar Bootstrap agar 100% jadi Biru Hijau Lokavira */
+.text-primary { color: var(--primary) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.btn-primary { 
+    background-color: var(--primary); 
+    border-color: var(--primary); 
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #096b6b; /* Warna lebih gelap saat tombol disentuh */
+    border-color: #096b6b;
+}
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
 }
 
 .back-to-top {
