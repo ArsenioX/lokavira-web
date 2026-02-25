@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="https://placehold.co/800x600/0C8C8C/EAB308?text=Mockup+Dashboard/Tim+Profesional"
+                    <img src="{{ asset('img/mediapkt.png') }}"
                         class="img-fluid rounded shadow-lg w-100" alt="Social Media Agency Lokavira"
                         style="object-fit: cover;">
                 </div>

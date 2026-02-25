@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="https://placehold.co/600x600/cc0000/ffffff?text=Mockup+Channel+YouTube+Klien" class="img-fluid rounded shadow-lg w-100" alt="YouTube Management Lokavira" style="object-fit: cover;">
+                    <img src="{{ asset('img/ytpkt.png') }}" class="img-fluid rounded shadow-lg w-100" alt="YouTube Management Lokavira" style="object-fit: cover;">
                 </div>
             </div>
         </div>

@@ -48,7 +48,7 @@
                             aria-labelledby="nav-social-tab">
                             <div class="row g-5 align-items-center">
                                 <div class="col-lg-6 col-md-12">
-                                    <img class="img-fluid rounded shadow-lg w-100" src="{{ asset('img/service-1.jpg') }}"
+                                    <img class="img-fluid rounded shadow-lg w-100" src="{{ asset('img/mediapkt.png') }}"
                                         style="object-fit: cover; max-height: 400px;" alt="Jasa Kelola Media Sosial">
                                 </div>
                                 <div class="col-lg-6 col-md-12">
@@ -75,7 +75,7 @@
                         <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
                             <div class="row g-5 align-items-center">
                                 <div class="col-lg-6 col-md-12">
-                                    <img class="img-fluid rounded shadow-lg w-100" src="{{ asset('img/service-2.jpg') }}"
+                                    <img class="img-fluid rounded shadow-lg w-100" src="{{ asset('img/webpkt.png') }}"
                                         style="object-fit: cover; max-height: 400px;" alt="Jasa Pembuatan Website">
                                 </div>
                                 <div class="col-lg-6 col-md-12">

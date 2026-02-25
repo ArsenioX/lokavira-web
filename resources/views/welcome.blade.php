@@ -243,7 +243,7 @@
                                     <div class="row g-4">
                                         <div class="col-md-6" style="min-height: 350px;">
                                             <div class="position-relative h-100">
-                                                <img class="position-absolute rounded w-100 h-100" src="img/service-1.jpg"
+                                                <img class="position-absolute rounded w-100 h-100" src="img/mediapkt.png"
                                                     style="object-fit: cover;" alt="Jasa Kelola Media Sosial">
                                             </div>
                                         </div>
@@ -267,7 +267,7 @@
                                     <div class="row g-4">
                                         <div class="col-md-6" style="min-height: 350px;">
                                             <div class="position-relative h-100">
-                                                <img class="position-absolute rounded w-100 h-100" src="img/service-2.jpg"
+                                                <img class="position-absolute rounded w-100 h-100" src="img/webpkt.png"
                                                     style="object-fit: cover;" alt="Jasa Pembuatan Website">
                                             </div>
                                         </div>

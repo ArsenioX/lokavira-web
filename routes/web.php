@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,3 +36,6 @@ Route::get('/paket/full', function () { return view('paket.full'); })->name('pak
 Route::get('/website', function () {
     return view('website');
 })->name('website');
+
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/send-message', [ContactController::class, 'send'])->name('send.message');

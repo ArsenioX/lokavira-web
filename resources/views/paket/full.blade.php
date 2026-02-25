@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="https://placehold.co/800x600/0b1121/eab308?text=Mockup+Multi-Device+(IG+TT+YT)"
+                    <img src="{{ asset('img/fullpkt.png') }}"
                         class="img-fluid rounded shadow-lg w-100" alt="Full 360 Omnichannel Lokavira"
                         style="object-fit: cover;">
                 </div>

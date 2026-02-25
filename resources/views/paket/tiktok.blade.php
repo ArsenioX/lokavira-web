@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="https://placehold.co/600x600/212529/ffffff?text=Mockup+Feed+TikTok+Klien" class="img-fluid rounded shadow-lg w-100" alt="TikTok Management Lokavira" style="object-fit: cover;">
+                    <img src="{{ asset('img/tiktokpkt.png') }}" class="img-fluid rounded shadow-lg w-100" alt="TikTok Management Lokavira" style="object-fit: cover;">
                 </div>
             </div>
         </div>
