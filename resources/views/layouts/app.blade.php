@@ -27,16 +27,76 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <style>
+        .wa-popup-wrapper {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 320px;
+            z-index: 1060;
+            display: none;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            animation: slideUp 0.3s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Tombol diubah jadi transparent border-0 karena sekarang pakai button bukan link */
+        button.whatsapp-float {
+            background: transparent;
+            border: none;
+            padding: 0;
+            outline: none;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <a href="https://wa.me/628138808690?text=Halo%20Lokavira,%20saya%20ingin%20bertanya%20tentang%20layanan"
-        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <div class="whatsapp-container">
-            <i class="fab fa-whatsapp whatsapp-icon"></i>
-            <span>Kontak Kami</span>
+
+    <div id="waPopupForm" class="wa-popup-wrapper bg-white">
+        <div class="p-3 d-flex justify-content-between align-items-center" style="background-color: #0C8C8C;">
+            <div class="d-flex align-items-center text-white">
+                <i class="fab fa-whatsapp fs-3 me-2"></i>
+                <h6 class="mb-0 text-white fw-bold">Halo Lokavira!</h6>
+            </div>
+            <button type="button" class="btn-close btn-close-white" onclick="tutupWaPopup()"></button>
         </div>
-    </a>
+        <div class="p-4">
+            <p class="small text-muted mb-3">Boleh tahu nama Anda sebelum kita berdiskusi lebih lanjut?</p>
+            <form onsubmit="kirimFloatingWa(event)">
+                <div class="mb-3 form-floating">
+                    <input type="text" class="form-control bg-light border-0" id="namaVisitor" placeholder="Nama Anda"
+                        required>
+                    <label for="namaVisitor">Nama Anda</label>
+                </div>
+                <button type="submit" class="btn text-white w-100 fw-bold rounded-pill"
+                    style="background-color: #25D366;">
+                    Mulai Chat <i class="fas fa-paper-plane ms-1"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <button onclick="bukaWaPopup()" class="whatsapp-float border-0" style="z-index: 1050;">
+        <div class="whatsapp-container shadow-lg"
+            style="background-color: #25D366; border-radius: 50px; padding: 10px 20px; display: flex; align-items: center; color: white;">
+            <i class="fab fa-whatsapp whatsapp-icon fs-4 me-2"></i>
+            <span class="fw-bold">Kontak Kami</span>
+        </div>
+    </button>
 
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -45,8 +105,10 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>123 streat, Jakarta Utara, IND</small>
-                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>6.00 am - 6.00 pm</small>
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Jl. Gading Griya Lestari, Jakarta
+                    Utara</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>Senin - Jumat: 09.00 - 17.00
+                    WIB</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small><i class="fa fa-envelope text-primary me-2"></i>Halo.Lokavira@gmail.com</small>
@@ -73,15 +135,17 @@
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3"
-                        href="https://www.tiktok.com/@lokavira.id?_r=1&_t=ZS-948d33BJoDk" target="_blank" rel="noopener noreferrer">
+                        href="https://www.tiktok.com/@lokavira.id?_r=1&_t=ZS-948d33BJoDk" target="_blank"
+                        rel="noopener noreferrer">
                         <small class="fab fa-tiktok text-primary"></small>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://wa.me/628138808690" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://wa.me/628138808690"
+                        target="_blank" rel="noopener noreferrer">
                         <small class="fab fa-whatsapp text-primary"></small>
                     </a>
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3"
-                        href="https://www.instagram.com/lokavira.id?igsh=Ym9qODc1NnF5Z3I4" target="_blank" rel="noopener noreferrer">
+                        href="https://www.instagram.com/lokavira.id?igsh=Ym9qODc1NnF5Z3I4" target="_blank"
+                        rel="noopener noreferrer">
                         <small class="fab fa-instagram text-primary"></small>
                     </a>
                 </div>
@@ -96,58 +160,52 @@
         style="background: linear-gradient(90deg, #0b1121 0%, #0f4c5c 100%);">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-info mb-4">LOKAVIRA</h4>
                     <h6 class="text-white">PT Viovera Marli Sejahtera</h6>
                     <p class="mb-4 text-white-50">Partner digital kreatif dan analitik terpercaya Anda.</p>
                     <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                        href="https://wa.me/628138808690?text=Halo%20Loka,%20saya%20ingin%20tanya-tanya%20seputar%20layanan%20digital%20marketingnya"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                        href="https://www.instagram.com/lokavira.id?igsh=Ym9qODc1NnF5Z3I4" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                        href="https://www.tiktok.com/@lokavira.id?_r=1&_t=ZS-948d33BJoDk" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://youtube.com/@lokavira?si=6f_XcKuaqFZ5hRP1"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://wa.me/628138808690?text=Halo%20Loka,%20saya%20ingin%20tanya-tanya%20seputar%20layanan%20digital%20marketingnya"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.instagram.com/lokavira.id?igsh=Ym9qODc1NnF5Z3I4" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.tiktok.com/@lokavira.id?_r=1&_t=ZS-948d33BJoDk" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://youtube.com/@lokavira?si=6f_XcKuaqFZ5hRP1" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Layanan</h4>
-                    <a class="btn btn-link" href="">Social Media Management</a>
-                    <a class="btn btn-link" href="">Web Development</a>
-                    <a class="btn btn-link" href="">TikTok & YouTube Ads</a>
-                    <a class="btn btn-link" href="">Instagram Ads</a>
-                    <a class="btn btn-link" href="">UI/UX & Editing Grafis</a>
+                    <a class="btn btn-link" href="{{ url('/service') }}">Social Media Management</a>
+                    <a class="btn btn-link" href="{{ url('/service') }}">Web Development</a>
+                    <a class="btn btn-link" href="{{ url('/service') }}">TikTok & YouTube Ads</a>
+                    <a class="btn btn-link" href="{{ url('/service') }}">Instagram Ads</a>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Hubungi Kami</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Gading Griya Lestari H1 No.39,
-                        Cilincing, Jakarta Utara</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>support@lokavira.com</p>
+                        Cilincing,
+                        Jakarta Utara</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>helo.lokavira@gmail.com</p>
                     <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>+62 813-880-8690</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dapatkan tips marketing dan promo terbaru langsung di inbox Anda.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Email Anda">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -155,11 +213,12 @@
         style="background: #0b1121; border-top: 1px solid rgba(255, 255, 255, .1);">
         <div class="container">
             <div class="row align-items-center">
-                
+
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; 2026 <a class="border-bottom text-white" href="{{ url('/') }}">PT. Viovera Marli Sejahtera (Lokavira)</a>, All Right Reserved.
+                    &copy; 2026 <a class="border-bottom text-white" href="{{ url('/') }}">PT. Viovera Marli Sejahtera
+                        (Lokavira)</a>, All Right Reserved.
                 </div>
-                
+
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu mb-2">
                         <a href="{{ url('/') }}">Home</a>
@@ -167,12 +226,13 @@
                         <a href="">Help</a>
                         <a href="">FAQs</a>
                     </div>
-                    
+
                     <div class="small text-white-50">
-                        Designed By <a class="border-bottom text-white-50" href="https://htmlcodex.com" target="_blank">HTML Codex</a>
+                        Designed By <a class="border-bottom text-white-50" href="https://htmlcodex.com"
+                            target="_blank">HTML Codex</a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -187,38 +247,67 @@
     <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
     <script src="{{ asset('js/main.js') }}"></script>
+
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".navbar");
+            const collapse = document.querySelector(".navbar-collapse");
 
-        const navbar = document.querySelector(".navbar");
-        const collapse = document.querySelector(".navbar-collapse");
+            function checkScrollState() {
+                if (window.scrollY <= 50 && !collapse.classList.contains("show")) {
+                    navbar.classList.remove("nav-open");
+                }
+            }
 
-        function checkScrollState(){
-            if(window.scrollY <= 50 && !collapse.classList.contains("show")){
-                navbar.classList.remove("nav-open");
+            collapse.addEventListener("show.bs.collapse", function () {
+                navbar.classList.add("nav-open");
+            });
+
+            collapse.addEventListener("hidden.bs.collapse", function () {
+                checkScrollState();
+            });
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("nav-open");
+                } else {
+                    checkScrollState();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function bukaWaPopup() {
+            const popup = document.getElementById("waPopupForm");
+            // Toggle tampil/sembunyi kotak pop-up
+            if (popup.style.display === "none" || popup.style.display === "") {
+                popup.style.display = "block";
+            } else {
+                popup.style.display = "none";
             }
         }
 
-        // LANGSUNG putih saat mulai buka (SEBELUM dropdown muncul)
-        collapse.addEventListener("show.bs.collapse", function () {
-            navbar.classList.add("nav-open");
-        });
+        function tutupWaPopup() {
+            document.getElementById("waPopupForm").style.display = "none";
+        }
 
-        // setelah ditutup → cek perlu transparan lagi atau tidak
-        collapse.addEventListener("hidden.bs.collapse", function () {
-            checkScrollState();
-        });
+        function kirimFloatingWa(event) {
+            event.preventDefault(); // Cegah reload halaman
 
-        // scroll behaviour normal
-        window.addEventListener("scroll", function () {
-            if(window.scrollY > 50){
-                navbar.classList.add("nav-open");
-            } else {
-                checkScrollState();
-            }
-        });
+            const nama = document.getElementById("namaVisitor").value;
+            // Gunakan nomor API resmi "628...", sistem WA dan Wablas otomatis membaca ini sebagai 08.
+            const noTujuan = "628138808690";
+            const teksWA = "Halo Lokavira, saya " + nama + ". Saya ingin konsultasi mengenai layanan digital marketing Anda.";
 
-    });
+            // Encode teks menjadi format URL
+            const urlWA = "https://wa.me/" + noTujuan + "?text=" + encodeURIComponent(teksWA);
+
+            // Kosongkan form, tutup popup, lalu buka WA di tab baru
+            document.getElementById("namaVisitor").value = "";
+            tutupWaPopup();
+            window.open(urlWA, "_blank");
+        }
     </script>
 </body>
 

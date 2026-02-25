@@ -241,7 +241,9 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-muted small">
-                                    Kami tidak mengelola perizinan toko Anda, melainkan membantu mendesain *cover* poster/katalog produk di etalase Anda agar terlihat rapi, jelas, dan memancing audiens untuk menekan tombol *checkout*.
+                                Kami akan membantu mengelola tampilan toko online Anda. Tim kami fokus pada desain visual, mulai dari membuat cover
+                                poster produk hingga merapikan katalog di etalase Keranjang Kuning Anda agar terlihat profesional, jelas, dan memancing
+                                audiens untuk menekan tombol checkout.
                                 </div>
                             </div>
                         </div>

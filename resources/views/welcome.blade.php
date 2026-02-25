@@ -36,7 +36,7 @@
                                    <div class="col-lg-6 col-md-12 text-center text-lg-end">
                                         <img src="{{ asset('img/mockup1.jpg') }}" alt="Ilustrasi Digital Marketing"
                                             class="img-fluid animated slideInRight"
-                                            style="width: 100%; max-width: 750px; height: auto; animation-delay: 0.6s;"> 
+                                            style="width: 100%; max-width: 750px; height: auto; animation-delay: 0.6s;">
                                     </div>
 
                                 </div>
@@ -192,9 +192,9 @@
                                                 <i class="fa fa-headset text-white"></i>
                                             </div>
                                             <div class="ps-3">
-                                                <h4>Support 24 Jam</h4>
-                                                <span>Dunia digital tidak pernah tidur. Kami siap memantau performa kampanye Anda setiap
-                                                    saat.</span>
+                                                <h4>Konsultasi Brand</h4>
+                                                <span>Kami tidak hanya sekadar membuat dan memposting konten sosial media Anda. Kami juga hadir sebagai partner diskusi untuk
+                                                merancang strategi digital marketing yang tepat sasaran.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -293,6 +293,23 @@
             </div>
                 <!-- Service End -->
 
+                <div class="container-fluid py-4 my-4 wow fadeIn" data-wow-delay="0.1s"
+                    style="background: linear-gradient(135deg, #0C8C8C 0%, #085e5e 100%);">
+                    <div class="container py-3 text-center">
+                        <h2 class="display-5 text-white mb-3">Bingung Mulai Strategi Digital dari Mana?</h2>
+
+                        <p class="text-white-50 mb-4 mx-auto" style="max-width: 700px;">
+                            Jangan buang waktu dan anggaran Anda untuk *trial & error*. Mari diskusikan kebutuhan brand Anda dengan tim
+                            ahli Lokavira. Kami siap memberikan panduan secara gratis!
+                        </p>
+
+                        <a href="https://wa.me/628138808690?text=Halo%20Loka,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20strategi%20digital%20bisnis%20saya."
+                            target="_blank" class="btn btn-warning text-dark py-2 px-4 rounded-pill fw-bold shadow">
+                            <i class="fab fa-whatsapp me-2"></i> Mulai Konsultasi Gratis
+                        </a>
+                    </div>
+                </div>
+
 
                 <!-- Projects Start -->
                 <div class="container-xxl py-5">
@@ -389,62 +406,74 @@
                 </style>
 
                 <!-- Contact Start -->
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="row g-5">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
 
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Hubungi Kami</p>
-                            <h1 class="display-5 mb-4">Siap Meningkatkan Bisnis Anda ke Level Berikutnya?</h1>
-                            <p class="mb-4">
-                                Jangan ragu untuk berdiskusi dengan kami. Tim Lokavira siap memberikan solusi digital terbaik yang
-                                sesuai dengan target dan anggaran Anda.
-                            </p>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Hubungi Kami</p>
+                        <h1 class="display-5 mb-4">Siap Meningkatkan Bisnis Anda ke Level Berikutnya?</h1>
+                        <p class="mb-4">
+                            Jangan ragu untuk berdiskusi dengan kami. Tim Lokavira siap memberikan solusi digital terbaik yang
+                            sesuai dengan target dan anggaran Anda.
+                        </p>
 
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
-                                            <label for="name">Nama Lengkap</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Alamat Email">
-                                            <label for="email">Alamat Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subjek / Keperluan">
-                                            <label for="subject">Subjek / Keperluan</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Tulis pesan Anda di sini" id="message"
-                                                style="height: 100px"></textarea>
-                                            <label for="message">Pesan Anda</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary py-3 px-5" type="submit">Kirim Pesan</button>
+                        <form id="waFormHome" onsubmit="kirimKeWhatsAppHome(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="waNameHome" placeholder="Nama Lengkap"
+                                            required>
+                                        <label for="waNameHome">Nama Lengkap</label>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
 
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                            <div class="position-relative rounded overflow-hidden h-100">
-                                <iframe class="position-relative w-100 h-100"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2580.9131305236283!2d106.91572933037732!3d-6.141018910708709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b64a0e8401f%3A0xd9d96bb7e076bde!2sPT.%20Viovera%20Marli%20Sejahtera!5e0!3m2!1sid!2sid!4v1771730595323!5m2!1sid!2sid"
-                                    frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                                    tabindex="0"></iframe>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="waPhoneHome" placeholder="08xxxxxxxxxx"
+                                            pattern="^08[0-9]{8,11}$" title="Nomor WhatsApp harus diawali dengan 08" required>
+                                        <label for="waPhoneHome">No. WhatsApp (Awali: 08)</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Tulis pesan Anda di sini" id="waMessageHome"
+                                            style="height: 120px" required></textarea>
+                                        <label for="waMessageHome">Pesan Anda</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary py-3 px-5 rounded-pill w-100 fw-bold" type="submit">
+                                        <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Kirim Pesan via WhatsApp
+                                    </button>
+                                </div>
                             </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                        <div class="position-relative rounded overflow-hidden h-100 shadow-sm">
+                            <iframe class="position-relative w-100 h-100"
+                                src="https://maps.google.com/maps?q=Jl.+Gading+Griya+Lestari+H1+No.39,+Cilincing,+Jakarta+Utara&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            </iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <script>
+            function kirimKeWhatsAppHome(event) {
+                event.preventDefault();
+                var nama = document.getElementById('waNameHome').value;
+                var pesan = document.getElementById('waMessageHome').value;
+                var noTujuan = "628138808690";
+                var teksWA = "Halo Lokavira, saya " + nama + ".\n\n" + pesan;
+                var urlWA = "https://wa.me/" + noTujuan + "?text=" + encodeURIComponent(teksWA);
+                window.open(urlWA, "_blank");
+            }
+        </script>
                 <!-- Contact End -->
 @endsection

@@ -114,9 +114,9 @@
                                         <i class="fa fa-headset text-white"></i>
                                     </div>
                                     <div class="ps-3">
-                                        <h4>Support 24 Jam</h4>
-                                        <span>Dunia digital tidak pernah tidur. Kami siap memantau performa kampanye Anda setiap
-                                            saat.</span>
+                                        <h4>Konsultasi Brand</h4>
+                                        <span>Kami tidak hanya sekadar membuat dan memposting konten sosial media Anda. Kami juga hadir sebagai partner diskusi untuk
+                                        merancang strategi digital marketing yang tepat sasaran.</span>
                                     </div>
                                 </div>
                             </div>
