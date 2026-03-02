@@ -241,19 +241,19 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-item shadow-sm">
-                        <img src="{{ asset('img/feed-1.png') }}"
+                        <img src="{{ asset('img/reels-1.png') }}"
                             class="img-fluid w-100" alt="Portofolio IG Lokavira">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="portfolio-item shadow-sm">
-                        <img src="https://placehold.co/1280x720/0C8C8C/ffffff?text=Portofolio+Reels" class="img-fluid w-100"
+                        <img src="{{ asset('img/feed-2.png') }}"
                             alt="Portofolio IG Lokavira">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-item shadow-sm">
-                        <img src="https://placehold.co/1280x720/0C8C8C/ffffff?text=Portofolio+Feed+2"
+                        <img src="{{ asset('img/tiktok-1.png') }}"
                             class="img-fluid w-100" alt="Portofolio IG Lokavira">
                     </div>
                 </div>

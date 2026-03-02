@@ -251,23 +251,23 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-item shadow-sm text-center">
-                        <img src="https://placehold.co/1280x720/E1306C/ffffff?text=Instagram+Feed" class="img-fluid w-100"
+                        <img src="{{ asset('img/reels-1.png') }}"
                             alt="Instagram Portfolio">
-                        <p class="mt-3 fw-bold text-dark">Visual Branding (Instagram)</p>
+                        <p class="mt-3 fw-bold text-dark">BerkatIntiGuna Sosial Management</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="portfolio-item shadow-sm text-center">
-                        <img src="https://placehold.co/1280x720/212529/ffffff?text=TikTok+Video" class="img-fluid w-100"
+                        <img src="{{ asset('img/feed-2.png') }}"
                             alt="TikTok Portfolio">
-                        <p class="mt-3 fw-bold text-dark">Viral & Konversi (TikTok)</p>
+                        <p class="mt-3 fw-bold text-dark">HerbalHealt Sosial Management</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-item shadow-sm text-center">
-                        <img src="https://placehold.co/1280x720/cc0000/ffffff?text=YouTube+Thumbnail"
+                        <img src="{{ asset('img/tiktok-1.png') }}"
                             class="img-fluid w-100" alt="YouTube Portfolio">
-                        <p class="mt-3 fw-bold text-dark">SEO & Edukasi (YouTube)</p>
+                        <p class="mt-3 fw-bold text-dark">HaifitCare Social Management</p>
                     </div>
                 </div>
             </div>

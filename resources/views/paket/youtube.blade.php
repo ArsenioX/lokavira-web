@@ -249,23 +249,23 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-item shadow-sm text-center">
-                        <img src="https://placehold.co/1280x720/dc3545/ffffff?text=Contoh+Thumbnail+High+CTR"
+                        <img src="{{ asset('img/reels-1.png') }}"
                             class="img-fluid w-100" alt="Format Thumbnail YouTube">
-                        <p class="mt-3 fw-bold text-dark">Desain Thumbnail Custom (Long-Form)</p>
+                        <p class="mt-3 fw-bold text-dark">BerkatIntiGuna</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="portfolio-item shadow-sm text-center">
-                        <img src="https://placehold.co/1280x720/0C8C8C/ffffff?text=Video+Shorts" class="img-fluid w-100"
+                        <img src="{{ asset('img/feed-2.png') }}"
                             alt="Format YouTube Shorts">
-                        <p class="mt-3 fw-bold text-dark">Format Vertikal (Shorts)</p>
+                        <p class="mt-3 fw-bold text-dark">HerbalHealt</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-item shadow-sm text-center">
-                        <img src="https://placehold.co/1280x720/212529/ffffff?text=Video+Podcast/Webinar"
+                        <img src="{{ asset('img/tiktok-1.png') }}"
                             class="img-fluid w-100" alt="Format YouTube Long Form">
-                        <p class="mt-3 fw-bold text-dark">Editing Video Panjang & Podcast</p>
+                        <p class="mt-3 fw-bold text-dark">Haifitcare</p>
                     </div>
                 </div>
             </div>
