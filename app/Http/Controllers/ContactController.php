@@ -23,7 +23,7 @@ class ContactController extends Controller
         ]);
 
         $domain     = 'https://kudus.wablas.com';
-        $adminPhone = '6281292826677'; // Sudah dikoreksi ditambah angka 8
+        $adminPhone = '628138808690'; // Sudah dikoreksi ditambah angka 8
         $tokenFull  = 'VRVARb0BQ34YSJt0wtE1D9AGgRGd1DQ4Dn0MzjVi6qXRMvjW8woOLqNiNOftJpxO.DBGAVT5K';
 
         // Format nomor HP User

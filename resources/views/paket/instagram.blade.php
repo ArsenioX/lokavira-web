@@ -241,7 +241,7 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-item shadow-sm">
-                        <img src="https://placehold.co/1280x720/0C8C8C/ffffff?text=Portofolio+Feed+1"
+                        <img src="{{ asset('img/feed-1.png') }}"
                             class="img-fluid w-100" alt="Portofolio IG Lokavira">
                     </div>
                 </div>
