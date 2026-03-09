@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Halaman Beranda --}}
+@section('title', 'Lokavira - Digital Marketing Agency & Jasa Web Development Jakarta')
+@section('meta_description', 'Lokavira membantu bisnis tumbuh lebih cepat melalui jasa kelola sosial media (Instagram/TikTok), strategi iklan digital, dan jasa pembuatan website profesional.')
+
 @section('content')
                 <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">

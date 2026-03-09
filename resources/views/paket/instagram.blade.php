@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Jasa Instagram Management --}}
+@section('title', 'Jasa Kelola Instagram & Admin Feed Estetik - Lokavira')
+@section('meta_description', 'Tingkatkan brand awareness dengan jasa kelola Instagram dari Lokavira. Kami melayani desain feed estetik, editing Reels viral, copywriting persuasif, hingga admin posting rutin.')
+
 @section('content')
     <style>
         html {

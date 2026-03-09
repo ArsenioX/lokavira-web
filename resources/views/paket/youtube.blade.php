@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Jasa YouTube Management --}}
+@section('title', 'Jasa YouTube SEO & Management Channel Profesional - Lokavira')
+@section('meta_description', 'Tingkatkan viewers dan subscribers dengan jasa YouTube SEO dari Lokavira. Kami melayani optimasi channel, riset keyword, desain thumbnail high-CTR, hingga editing video Shorts & Long-form.')
+
 @section('content')
     <style>
         html {

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Jasa Web Development --}}
+@section('title', 'Jasa Pembuatan Website Profesional & Toko Online - Lokavira')
+@section('meta_description', 'Miliki website profesional untuk bisnis Anda. Lokavira menyediakan jasa pembuatan website profile UMKM, corporate, dan toko online dengan desain premium, gratis domain, serta hosting.')
+
 @section('content')
     <style>
         html {

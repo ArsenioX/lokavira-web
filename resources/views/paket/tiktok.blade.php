@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Jasa TikTok Management --}}
+@section('title', 'Jasa Kelola TikTok Profesional & Optimasi TikTok Shop - Lokavira')
+@section('meta_description', 'Tingkatkan viewers dan omzet dengan jasa kelola TikTok dari Lokavira. Kami bantu riset tren FYP, editing video kreatif, hingga optimasi keranjang kuning TikTok Shop.')
+
 @section('content')
     <style>
         html {

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Halaman Layanan --}}
+@section('title', 'Layanan Digital Marketing & Web Development - Lokavira')
+@section('meta_description', 'Solusi digital terintegrasi dari Lokavira: Jasa kelola media sosial (Instagram, TikTok, YouTube) dan pembuatan website profesional yang responsif serta SEO-friendly.')
+
 @section('content')
     <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">

@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+
+{{-- SEO Meta Tags Khusus Jasa Sosial Media --}}
+@section('title', 'Jasa Kelola Sosial Media Instagram & TikTok - Lokavira')
+@section('meta_description', 'Tingkatkan omzet dengan jasa kelola sosial media profesional dari Lokavira. Kami bantu riset konten, desain estetik, hingga posting rutin di Instagram, TikTok, dan YouTube.')
+
 @section('content')
     <style>
         html {

@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+{{-- SEO Meta Tags Khusus Paket Full 360 --}}
+@section('title', 'Paket Full 360° - Jasa Digital Marketing Omnichannel Terpadu - Lokavira')
+@section('meta_description', 'Kuasai semua platform dengan satu paket. Jasa manajemen Instagram, TikTok, dan YouTube terintegrasi dalam satu strategi digital marketing omnichannel dari Lokavira.')
+
+
 @section('content')
     <style>
         html {
