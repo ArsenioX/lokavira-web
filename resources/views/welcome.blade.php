@@ -37,11 +37,12 @@
                                         </a>
                                     </div>
 
-                                   <div class="col-lg-6 col-md-12 text-center text-lg-end">
-                                        <img src="{{ asset('img/mockup1.jpg') }}" alt="Ilustrasi Digital Marketing"
-                                            class="img-fluid animated slideInRight"
-                                            style="width: 100%; max-width: 750px; height: auto; animation-delay: 0.6s;">
-                                    </div>
+                                  <div class="col-lg-6 col-md-12 text-center text-lg-end">
+                                {{-- PERUBAHAN: max-width diperbesar ke 850px dan width 110% untuk kesan lebih menonjol --}}
+                                <img src="{{ asset('img/mockup1.jpg') }}" alt="Ilustrasi Digital Marketing"
+                                    class="img-fluid animated slideInRight"
+                                    style="width: 135%; max-width: 850px; height: auto; animation-delay: 0.6s;">
+                            </div>
 
                                 </div>
                             </div>
@@ -75,11 +76,12 @@
                                     </a>
                                 </div>
 
-                                <div class="col-lg-6 col-md-12 text-center text-lg-end">
-                                    <img src="{{ asset('img/mockup2.png') }}" alt="Creative Brand Solutions"
-                                        class="img-fluid animated slideInRight"
-                                        style="width: 100%; max-width: unset; margin-right: -15%; height: auto; animation-delay: 0.6s;">
-                                </div>
+                               <div class="col-lg-6 col-md-12 text-center text-lg-end">
+                                {{-- PERUBAHAN: width diperbesar ke 125% dan margin-right disesuaikan agar gambar lebih keluar dari kontainer --}}
+                                <img src="{{ asset('img/mockup2.png') }}" alt="Creative Brand Solutions"
+                                    class="img-fluid animated slideInRight"
+                                    style="width: 150%; max-width: none; margin-right: -25%; height: auto; animation-delay: 0.6s;">
+                            </div>
 
                             </div>
                         </div>
@@ -416,7 +418,6 @@
                                 <h5 class="mb-0 fw-bold text-dark">Herbalhealth</h5>
                             </div>
                         </div>
-
                         <div class="project-item pb-5">
                             <div class="project-img">
                                 <img class="img-fluid" src="img/reels-1.png" alt="Berkatintiguna">

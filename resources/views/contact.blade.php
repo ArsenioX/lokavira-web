@@ -60,16 +60,14 @@
                     </form>
                 </div>
 
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+               <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100 shadow-sm">
-                        {{-- Tip: Pastikan src iframe maps menggunakan link yang valid dari Google Maps --}}
                         <iframe class="position-relative w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.042781075344!2d106.9150!3d-6.1250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDcnMzAuMCJTIDEwNsKwNTQnNTQuMCJF!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                            src="https://maps.google.com/maps?q=Jl.+Gading+Griya+Lestari+H1+No.39,+Cilincing,+Jakarta+Utara&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
                         </iframe>
                     </div>
-                </div>
-            </div>
+                </div>            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
